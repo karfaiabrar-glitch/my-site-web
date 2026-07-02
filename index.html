@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>the victorian Hotel</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://thevictorian.com/index">
+
+  <meta name="description" content="Explore rooms: single, double, and suite. Compare amenities in a detailed table.">
+  <meta name="keywords" content="hotel rooms, suite, amenities, booking, Miami hotel, the victorian">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    :root {
+      --dark: #2c003e; 
+      --mid: #5e1ca2; 
+      --light: #9c4dcc; 
+      --bg: #c2a1e0;   
+      --text-light: #dbbff7;
+    }
+
+    body {
+      font-weight: bold;
+      background: linear-gradient(120deg, var(--dark), var(--mid), var(--light));
+      color: var(--text-light);
+    }
+
+    .navbar {
+      font-weight: bold;
+      background: linear-gradient(90deg, var(--dark), var(--mid));
+    }
+
+    .navbar-brand, .nav-link {
+      font-weight: bold;
+      color: var(--text-light) !important;
+    }
+
+    .nav-link:hover {
+      font-weight: bold;
+      color: var(--light) !important;
+    }
+
+    header.hero {
+      background: linear-gradient(120deg, var(--mid), var(--light));
+      border-radius: 12px;
+      padding: 40px;
+      margin: 20px auto;
+      text-align: center;
+      color: var(--text-light);
+      font-weight: bold;
+    }
+
+    .section-card {
+      font-weight: bold;
+      background: var(--mid);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(44,0,62,0.3);
+      color: var(--text-light);
+    }
+
+    .section-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px 12px 0 0;
+    }
+
+    footer {
+      font-weight: bold;
+      background: var(--dark);
+      color: var(--text-light);
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer::after {
+      font-weight: bold;
+      content: "";
+      display: block;
+      height: 5px;
+      background: linear-gradient(to right, var(--mid), var(--light));
+    }
+
+    @media(max-width:600px){
+      .section-card img{height:150px;}
+      header.hero h1{font-size:1.6rem;}
+    }
+    @media(min-width:601px) and (max-width:992px){
+      .section-card img{height:180px;}
+      header.hero h1{font-size:2rem;}
+    }
+    @media(min-width:993px){
+      .section-card img{height:200px;}
+      header.hero h1{font-size:2.4rem;}
+    }
+</style>
+</head>
+<body id="top">
+
+  <header class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">the victorian</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="chambres.html">rooms</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="buffet.html">buffet</a></li>
+          <li class="nav-item"><a class="nav-link" href="prices.html">prices</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+  <header class="hero">
+    <h1>Welcome to the victorian Hotel</h1>
+    <p>Experience Miami luxury — exterior, lobby, suites.</p>
+  </header>
+
+  <section id="exterior" class="container my-5">
+    <div class="section-card">
+      <img src="exterior.jpg" alt="Exterior">
+      <div class="p-3">
+        <h3>Exterior</h3>
+        <p>Modern architecture in Miami’s skyline.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="lobby" class="container my-5">
+    <div class="section-card">
+      <img src="lobby.jpg" alt="Lobby">
+      <div class="p-3">
+        <h3>Lobby</h3>
+        <p>Grand lobby with marble floors and lush décor.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="entrance" class="container my-5">
+    <div class="section-card">
+      <img src="entrnance.jpg" alt="Entrance">
+      <div class="p-3">
+        <h3>Entrance</h3>
+        <p>Elegant entrance designed to impress.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="suite" class="container my-5">
+    <div class="section-card">
+      <img src="suite.jpg" alt="Suite">
+      <div class="p-3">
+        <h3>Suite</h3>
+        <p>Panoramic views and premium amenities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="container my-5">
+    <div class="section-card">
+      <img src="services.jpg" alt="Services">
+      <div class="p-3">
+        <h3>Services</h3>
+        <ul>
+          <li>Infinity pool</li>
+          <li>Restaurants</li>
+          <li>Spa</li>
+          <li>Conference halls</li>
+          <li>Concierge</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center my-3">
+    <a href="#top" style="color: var(--text-light);">⬆ Back to Top</a>
+  </div>
+  
+  <footer id="bottom">
+    <p> the victorian, Miami, Florida, USA |  +1 (305) 555‑1234 | info@the victorian.com</p>
+    <p>© 2025 the victorian Miami | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

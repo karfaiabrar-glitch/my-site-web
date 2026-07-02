@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Buffet & Prices at the victorian Hotel in Miami. Enjoy our delicious buffets and book your stay with ease.">
+  <meta name="keywords" content="Buffet & Prices at the victorian Hotel in miami">
+  <title>the victorian | Prices</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://thevictorian.com/prices">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    
+    :root {
+      --dark: #001f3f;
+      --mid: #003366;
+      --light: #3399ff;
+      --bg: #001f2f;
+      --text-light: #ccebf7;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text-light);
+      font-weight: bold;
+    }
+
+    .navbar {
+      background: linear-gradient(90deg, var(--dark), var(--mid));
+      font-weight: bold;
+    }
+
+    .navbar-brand, .nav-link {
+      color: var(--text-light) !important;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      color: var(--light) !important;
+    }
+
+    .buffet-list li {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border-bottom: 1px dashed var(--light);
+      font-weight: bold;
+    }
+
+    .buffet-list li:last-child {
+      border-bottom: none;
+    }
+
+    form {
+      background: var(--mid);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,50,0.5);
+      color: var(--text-light);
+    }
+
+    .form-label {
+      font-weight: bold;
+      color: var(--light);
+    }
+
+    .btn-submit {
+      background: var(--light);
+      color: var(--dark);
+      font-weight: bold;
+    }
+
+    .btn-submit:hover {
+      background: var(--text-light);
+      color: var(--mid);
+    }
+
+    header.text-center.bg-light  {
+      background: linear-gradient(to bottom, var(--mid), var(--dark));
+      color: var(--text-light);
+    }
+
+    section h2 {
+      color: var(--light);
+    }
+
+    footer {
+      background: var(--dark);
+      color: var(--text-light);
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer::after {
+      content: "";
+      display: block;
+      height: 5px;
+      background: linear-gradient(to right, var(--mid), var(--light));
+    }
+
+    @media(max-width:600px){ 
+      header h1{font-size:1.6rem;}
+    }
+    @media(min-width:601px) and (max-width:992px){ 
+      header h1{font-size:2rem;}
+    }
+    @media(min-width:993px){ 
+      header h1{font-size:2.4rem;}
+    }
+  </style>
+</head>
+<body>
+  
+  <header class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">the victorian</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="chambres.html">Rooms</a></li>
+          <li class="nav-item"><a class="nav-link" href="buffet.html">Buffet</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <header class="text-center bg-light p-5">
+    <h1>Prices</h1>
+    <p>Book your stay with ease and enjoy your time.</p>
+  </header>
+
+  <section class="container my-5">
+    <h2>Buffet Prices</h2>
+    <ul class="buffet-list list-unstyled">
+      <li><span>Breakfast buffet</span><span>$120</span></li>
+      <li><span>Lunch buffet</span><span>$200</span></li>
+      <li><span>Dinner buffet</span><span>$250</span></li>
+      <li><span>Kids buffet</span><span>$100</span></li>
+    </ul>
+  </section>
+
+  <section class="container my-5">
+    <h2>Booking</h2>
+    <form>
+      <div class="mb-3"><label for="name" class="form-label">Full Name</label><input type="text" id="name" class="form-control" required></div>
+      <div class="mb-3"><label for="email" class="form-label">Email</label><input type="email" id="email" class="form-control" required></div>
+      <div class="mb-3"><label for="persons" class="form-label">How many persons</label><input type="number" id="persons" class="form-control" min="1" required></div>
+      <div class="mb-3"><label for="room" class="form-label">Room Type</label>
+        <select id="room" class="form-select" required>
+          <option disabled selected>Select room</option>
+          <option>Single</option><option>Double</option><option>Suite</option>
+        </select>
+      </div>
+      <div class="mb-3"><label for="checkin" class="form-label">Check-In Date</label><input type="date" id="checkin" class="form-control" required></div>
+      <div class="mb-3"><label for="days" class="form-label">How Many Days</label><input type="number" id="days" class="form-control" min="1" required></div>
+      <div class="mb-3"><label for="card" class="form-label">Payment Card</label>
+        <select id="card" class="form-select" required>
+          <option disabled selected>Select card</option>
+          <option>Visa</option><option>Mastercard</option><option>Amex</option>
+        </select>
+      </div>
+      <div class="mb-3"><label class="form-label">Optional Services</label>
+        <div class="form-check"><input class="form-check-input" type="checkbox" id="pool"><label class="form-check-label" for="pool">Private Pool</label></div>
+        <div class="form-check"><input class="form-check-input" type="checkbox" id="maids"><label class="form-check-label" for="maids">Housekeeping</label></div>
+        <div class="form-check"><input class="form-check-input" type="checkbox" id="transfer"><label class="form-check-label" for="transfer">Airport Transfer</label></div>
+      </div>
+      <div class="mb-3"><label for="notes" class="form-label">Other Requests</label><textarea id="notes" class="form-control" rows="4"></textarea></div>
+      <button type="submit" class="btn btn-submit w-100">Confirm Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    <p> the victorian Hotel, Miami, Florida, USA |  +1 (305) 555‑1234 |  info@thevictorian.com</p>
+    <p>© 2025 the victorian Miami | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
