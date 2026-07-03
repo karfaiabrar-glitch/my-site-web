@@ -1,0 +1,51 @@
+body { font-family: Arial, sans-serif; margin:0; font-weight: bold;  border-bottom: 5px solid;}
+h1,h2 { margin:0; font-weight: bold; }
+body :hover{
+    cursor: pointer;
+}
+body::after {
+  content: "";
+  display: block;
+  height: 10px;
+}
+
+
+.img { width:100%; max-width:300px; margin:10px; border-radius:10px; transition: transform 0.4s; }
+.img:hover { transform: scale(1.05); }
+
+.table thead th { text-align:center; font-weight: bold;  }
+.table tbody td { vertical-align: middle; font-weight: bold;  }
+.table tbody tr:hover { background-color: #f12089; transition:0.3s;font-weight: bold;  }
+.ftr { margin-top:20px; padding:20px 0; text-align:center; background:#6e3cca; color:#3c14cc; font-weight: bold;  }
+
+@keyframes bk {
+  0%   { background-color: #ce0559; color: #5bbfdd; }
+  25%  { background-color: #ad1140; color: #95aad8; }
+  50%  { background-color: #bd037f; color: #a8a9bd; }
+  75%  { background-color: #e93fc4; color: #b9b9ec; }
+100% { background-color: #8d0982; color: #aba6f7; }
+}
+
+@keyframes dd { 
+to { transform: skew(80deg); } 
+from {  transform: translateY(-10px); }
+}
+
+@keyframes aa { 
+from { transform: scale(0.8);  } 
+to { transform: scale(1);  } 
+}
+
+body {
+animation: bk 4s infinite forwards;
+animation: aa 4s alternate backwards;
+animation: dd 4s alternate-reverse forwards;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+font-weight: bold;
+animation: aa 4s infinite forwards;
+}
